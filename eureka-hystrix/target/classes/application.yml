@@ -1,0 +1,19 @@
+server:
+  port: 8767
+
+spring:
+  application:
+    name: eureka-hystrix
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8764/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
